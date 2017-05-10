@@ -55,11 +55,24 @@ public class Numbers {
         return output;
     }
 
-/*
+
     public String random4() {
-        return "";
+
+        String output = "";
+        output += "####Example\nrandom4()\n*** Output ***";
+
+        for(int i=1; i<=4; i++) {
+            int myrandom = (int) (Math.random() * 10 + 1);
+            output += "\n"+myrandom;
+        }
+
+
+
+        return output;
     }
-*/
+
+
+
     public String even(int integer) {
 
         String output = "";
@@ -67,23 +80,30 @@ public class Numbers {
 
         for (int i = 1; i < integer; i++) {
 
-            if (i % 2 == 0 && i!=(integer)) {
-                output += "\n"+i;
-            }
-            //else if(i%2 == 0) {
-            //    output += i;
-           //     }
+         if (i % 2 == 0 && i != (integer)) {
+                output += "\n" + i;
             }
 
-        return output;
         }
 
-
-
+        return output;
+    }
 
 
     public String powers(int n) {
-        return "";
-    }
 
+        String output = "";
+        output += "*** Output ***\npowers()";
+
+        int counter = 1;
+
+        for (int i=1; i<n+1; i++){
+
+               counter *=2;
+               output+="\n"+counter;
+        }
+        return output;
+    }
 }
+
+
